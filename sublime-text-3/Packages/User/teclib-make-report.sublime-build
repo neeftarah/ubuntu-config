@@ -1,4 +1,0 @@
-{
-   "cmd": ["sh", "-c", "teclib-make-report $file && evince `echo $file|sed 's,asciidoc,pdf,'`"],
-   "selector": "source.asciidoc"
-}
