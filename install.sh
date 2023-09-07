@@ -216,6 +216,7 @@ sudo snap install dbeaver-ce
 # === INSTALLATION DE ZSH ===
 echo "\n${BLUE}=== INSTALLATION DE ZSH ===${NC}"
 echo "${BLUE}-> Installation de ZSH ===${NC}"
+mv ./.zshrc ~/.zshrc # Copie du fichier de configuration de ZSH (thème, alias, etc.)
 sudo apt install -yqq zsh # installation de zsh
 
 if [ ! -d ".oh-my-zsh" ]; then

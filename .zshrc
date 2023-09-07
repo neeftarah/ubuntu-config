@@ -13,7 +13,7 @@ fi
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
-BULLETTRAIN_CONTEXT_DEFAULT_USER="gfp"
+BULLETTRAIN_CONTEXT_DEFAULT_USER="$USER"
 BULLETTRAIN_DIR_EXTENDED=2
 ZSH_THEME="bullet-train"
 
