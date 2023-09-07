@@ -25,7 +25,7 @@ sudo apt full-upgrade -y -qq  # Met à jour le système en supprimant/installant
 
 # === INSTALLATION DE QUELQUES UTILITAIRES ===
 echo "\n${BLUE}=== INSTALLATION DE QUELQUES UTILITAIRES ===${NC}"
-sudo apt install -yqq htop terminator vim curl wget gpg apt-transport-https snapd gimp inkscape
+sudo apt install -yqq htop terminator vim curl wget gpg apt-transport-https snapd gimp inkscape sqlite3
 sudo snap install core
 sudo snap install snap-store
 
