@@ -70,7 +70,8 @@ sudo apt install -y -qq ${PHP_VERSION}-gd
 sudo apt install -y -qq ${PHP_VERSION}-bz2
 sudo apt install -y -qq ${PHP_VERSION}-curl
 sudo apt install -y -qq ${PHP_VERSION}-mbstring
-
+sudo apt install -y -qq ${PHP_VERSION}-xsl
+sudo apt install -y -qq ${PHP_VERSION}-sqlite3
 
 # === INSTALLATION DE COMPOSER ===
 echo "\n${BLUE}=== INSTALLATION DE COMPOSER ===${NC}"
