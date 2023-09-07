@@ -109,6 +109,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias update="sudo apt update && sudo apt full-upgrade && sudo apt autoremove -y"
 alias grma=”git checkout master && git fetch –all –purge && git pull && git switch - && git rebase master”
+alias sf="symfony console"
 
 
 export NVM_DIR="$HOME/.nvm"
