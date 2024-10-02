@@ -1,6 +1,6 @@
 #!/bin/sh
 # Variable d'installation
-PHP_VERSION='php8.2'
+PHP_VERSION='php8.3'
 
 # Constantes
 RED='\033[1;31m'
@@ -72,6 +72,9 @@ sudo apt install -y -qq ${PHP_VERSION}-curl
 sudo apt install -y -qq ${PHP_VERSION}-mbstring
 sudo apt install -y -qq ${PHP_VERSION}-xsl
 sudo apt install -y -qq ${PHP_VERSION}-sqlite3
+sudo apt install -y -qq ${PHP_VERSION}-pgsql
+sudo apt install -y -qq ${PHP_VERSION}-amqp
+sudo apt install -y -qq ${PHP_VERSION}-redis
 
 # === INSTALLATION DE COMPOSER ===
 echo "\n${BLUE}=== INSTALLATION DE COMPOSER ===${NC}"
@@ -231,7 +234,7 @@ fi
 
 if [ ! -f ".oh-my-zsh/themes/bullet-train.zsh-theme" ]; then
     echo "${BLUE}-> Installation du theme bullet-train${NC}"
-    sudo apt install -yqq ttf-ancient-fonts # 
+    sudo apt install -yqq ttf-ancient-fonts fonts-powerline # 
     cd ~/.oh-my-zsh/themes && wget https://raw.githubusercontent.com/caiogondim/bullet-train-oh-my-zsh-theme/master/bullet-train.zsh-theme # bullet-train theme
     cd ~
 fi
